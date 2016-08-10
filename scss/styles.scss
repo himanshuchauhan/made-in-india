@@ -4,8 +4,7 @@ $highlight: #58e48c;
 $grey_background: #f2f1f8;
 $grey_copy: #7a7a7a;
 $dark_grey: #3f3d4e;
-@import 'https://fonts.googleapis.com/css?family=Amita|Noto+Sans';
-//-----------------Global Styles------------//
+@import 'https://fonts.googleapis.com/css?family=Amita|Noto+Sans'; //-----------------Global Styles------------//
 * {
     box-sizing: border-box;
 }
@@ -13,7 +12,6 @@ body {
     font-family: Noto Sans,futura-medium,sans-serif;
     -webkit-font-smoothing: antialiased;
     line-height: 1.5rem;
-
 }
 .wrapper {
     width: 1440px;
@@ -48,7 +46,8 @@ body {
 }
 //-----------------Banner Styles------------//
 #banner {
-    background-image: url("../images/banner_background.jpg");
+    background-color: $grey_background;
+
     background-repeat: no-repeat;
     background-size: cover;
     header {
@@ -125,7 +124,6 @@ body {
         p {
             font-size: 1rem;
             color: $grey_copy;
-
         }
         .button {
             padding: 0.5rem 2rem;
@@ -140,7 +138,6 @@ body {
         }
     }
     .middle {
-
         &:after {
             bottom: -105px;
             height: 105px;
@@ -219,7 +216,6 @@ body {
     padding: 5rem 0;
     .contact_copy {
         float: left;
-
         margin: 1.5rem 4rem;
         .title {
             font-size: 4rem;
