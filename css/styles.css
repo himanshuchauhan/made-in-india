@@ -48,7 +48,7 @@ body {
 }
 
 #banner {
-  background-image: url("../images/banner_background.jpg");
+  background-color: #f2f1f8;
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -20,6 +20,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/fuck.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/fuck.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/images\/banner_background.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -27,6 +36,17 @@
 		"initialSize": 145539,
 		"inputAbbreviatedPath": "\/images\/banner_background.jpg",
 		"outputAbbreviatedPath": "\/images\/banner_background.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/banner_background_small.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7954,
+		"inputAbbreviatedPath": "\/images\/banner_background_small.jpg",
+		"outputAbbreviatedPath": "\/images\/banner_background_small.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
