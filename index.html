@@ -23,12 +23,23 @@
         }
 
         @keyframes sharpen {
-            from {
-                background-image: filter(url('images/banner_background.jpg'), blur(20px));
-            }
-            to {
-                background-image: filter(url('images/banner_background.jpg'), blur(0px));
-            }
+          0% {
+    background-image: filter("images/banner_background.jpg"), blur(50px));
+    opacity:0;
+  }
+  30% {
+background-image: filter("images/banner_background.jpg"), blur(30px));
+opacity:0;
+}
+60% {
+background-image: filter("images/banner_background.jpg"), blur(10px));
+opacity:0;
+}
+  100% {
+    background-image: filter("images/banner_background.jpg"), blur(0px));
+    opacity:1;
+  }
+
         }
     </style>
 </head>
