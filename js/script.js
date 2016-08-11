@@ -1,9 +1,6 @@
-
-
-
+// js for lazy-loading banner-background image
 window.onload = function loadStuff() {
     var win, doc, img, header, enhancedClass;
-
 
     win = window;
     doc = win.document;
@@ -52,6 +49,15 @@ window.onload = function loadStuff() {
     // image its source.
 
 };
+
+
+
+
+
+
+
+// JS for contact-form animations - needs refactoring
+
 
 /*!
  * classie - class helper functions

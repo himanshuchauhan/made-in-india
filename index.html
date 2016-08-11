@@ -18,21 +18,7 @@
             background-image: url("images/banner_background.jpg");
         }
 
-        .banner_enhanced {
-            animation-name: sharpen;
-            animation-duration: 2s;
-        }
 
-        @keyframes sharpen {
-            from {
-                background-image: filter("images/banner_background.jpg"), blur(20px));
-
-            }
-            to {
-                background-image: filter("images/banner_background.jpg"), blur(0px));
-                opacity: 1;
-            }
-        }
     </style>
 </head>
 
@@ -44,9 +30,9 @@
                 <div id="logo">Made <span>in</span> India</div>
 
                 <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Services</a>
+                    <a class="link" href="#">Home</a>
+                    <a class="link" href="#">Portfolio</a>
+                    <a class="link" href="#">Services</a>
                     <a href="#" class="button_secondary button button_small">Get in touch</a>
                 </nav>
             </header>
@@ -103,28 +89,28 @@
                     <br>We’d love to connect</p>
             </div>
             <div class="contact_form">
-                <form action="index.html" method="post">
+                <form action="https://formspree.io/himasnhuholik@outlook.com" method="post">
                     <div class="input">
-                        <input class="input_field" type="text" name="name" value="">
+                        <input class="input_field" type="text" name="name" required>
                         <label class="input_label" for="name">
                             <span class="input_label_content">Name</span>
                         </label>
                     </div>
                     <div class="input">
-                        <input class="input_field" type="text" name="company" value="">
+                        <input class="input_field" type="text" name="company" required>
                         <label class="input_label" for="company">
                             <span class="input_label_content">Company</span>
                         </label>
                     </div>
                     <div class="input">
-                        <input class="input_field" type="email" name="email" value="">
-                        <label class="input_label" for="email">
+                        <input class="input_field" type="email" name="_replyto" required>
+                        <label class="input_label" for="_replyto">
                             <span class="input_label_content">E-mail</span>
                         </label>
                     </div>
 
                 </form>
-                <input class="button button_highlight" type="button" name="Submit" value="Submit">
+                <input class="button button_highlight" type="submit" name="Submit" value="Send">
 
             </div>
         </div>
