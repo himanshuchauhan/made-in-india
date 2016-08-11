@@ -8,19 +8,31 @@
     <link rel="stylesheet" href="css/normalize.css" media="screen">
     <link rel="stylesheet" href="css/styles.css">
 
+    <style media="screen">
+        .banner {
+            background-image: url("images/banner_background_small.jpg");
+            transform: translateZ(0);
+        }
 
+        .banner_enhanced {
+            background-image: url("images/banner_background.jpg");
+        }
+
+
+    </style>
 </head>
 
 <body>
-    <section id="banner">
+    <section id="banner" class="banner">
+
         <div class="wrapper">
             <header>
                 <div id="logo">Made <span>in</span> India</div>
 
                 <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Services</a>
+                    <a class="link" href="#">Home</a>
+                    <a class="link" href="#">Portfolio</a>
+                    <a class="link" href="#">Services</a>
                     <a href="#" class="button_secondary button button_small">Get in touch</a>
                 </nav>
             </header>
@@ -77,28 +89,29 @@
                     <br>We’d love to connect</p>
             </div>
             <div class="contact_form">
-                <form action="index.html" method="post">
+                <form action="https://formspree.io/himanshuholik@outlook.com" method="POST">
                     <div class="input">
-                        <input class="input_field" type="text" name="name" value="">
+                        <input class="input_field" type="text" name="name" required>
                         <label class="input_label" for="name">
                             <span class="input_label_content">Name</span>
                         </label>
                     </div>
                     <div class="input">
-                        <input class="input_field" type="text" name="company" value="">
+                        <input class="input_field" type="text" name="company" required>
                         <label class="input_label" for="company">
                             <span class="input_label_content">Company</span>
                         </label>
                     </div>
                     <div class="input">
-                        <input class="input_field" type="email" name="email" value="">
-                        <label class="input_label" for="email">
+                        <input class="input_field" type="email" name="_replyto" required>
+                        <label class="input_label" for="_replyto">
                             <span class="input_label_content">E-mail</span>
                         </label>
                     </div>
+                    <input class="button button_highlight" type="submit" name="Submit" value="Send">
 
                 </form>
-                <input class="button button_highlight" type="button" name="Submit" value="Submit">
+
 
             </div>
         </div>
@@ -106,6 +119,16 @@
     <footer>© 2016 <span class="green">Himanshu Chauhan</span> // <span class="amita">Made <span class="in green">in</span> India</span>
     </footer>
     <script src="js/script.js" charset="utf-8"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82332221-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </body>
 

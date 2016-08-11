@@ -4,8 +4,7 @@ $highlight: #58e48c;
 $grey_background: #f2f1f8;
 $grey_copy: #7a7a7a;
 $dark_grey: #3f3d4e;
-@import 'https://fonts.googleapis.com/css?family=Amita|Noto+Sans';
-//-----------------Global Styles------------//
+@import 'https://fonts.googleapis.com/css?family=Amita|Noto+Sans'; //-----------------Global Styles------------//
 * {
     box-sizing: border-box;
 }
@@ -13,7 +12,6 @@ body {
     font-family: Noto Sans,futura-medium,sans-serif;
     -webkit-font-smoothing: antialiased;
     line-height: 1.5rem;
-
 }
 .wrapper {
     width: 1440px;
@@ -28,6 +26,9 @@ body {
     color: $white;
     text-decoration: none;
     text-align: center;
+}
+.button:hover {
+    box-shadow: 0 0 57px 0 rgba(4,6,9,0.25);
 }
 .button_highlight {
     background: $highlight;
@@ -47,8 +48,21 @@ body {
     clear: both;
 }
 //-----------------Banner Styles------------//
+.banner_enhanced {
+    animation-name: sharpen;
+    animation-duration: 2s;
+}
+@keyframes sharpen {
+    from {
+        background-image: filter("images/banner_background.jpg"), blur(20px);
+    }
+    to {
+        background-image: filter("images/banner_background.jpg"), blur(0px);
+        opacity: 1;
+    }
+}
 #banner {
-    background-image: url("../images/banner_background.jpg");
+    background-color: $grey_background;
     background-repeat: no-repeat;
     background-size: cover;
     header {
@@ -73,6 +87,32 @@ body {
             color: $white;
             text-decoration: none;
             margin-left: 2rem;
+        }
+        .link {
+            position: relative;
+            padding: 0 0 5px;
+        }
+        .link:focus,
+        .link:hover {
+            color: $highlight;
+        }
+        .link::after {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: $highlight;
+            content: " ";
+            opacity: 0;
+            transition: height 0.3s , opacity 0.3s , transform 0.3s;
+            transform: translateY(-10px);
+        }
+        .link:focus::after,
+        .link:hover::after {
+            height: 5px;
+            opacity: 1;
+            transform: translateY(0px);
         }
     }
     .content {
@@ -125,7 +165,6 @@ body {
         p {
             font-size: 1rem;
             color: $grey_copy;
-
         }
         .button {
             padding: 0.5rem 2rem;
@@ -134,13 +173,12 @@ body {
             content: " ";
             position: absolute;
             left: 50%;
-            bottom: -37px;
-            height: 37px;
+            bottom: -50px;
+            height: 50px;
             border-left: 2px solid #c9c7d3;
         }
     }
     .middle {
-
         &:after {
             bottom: -105px;
             height: 105px;
@@ -219,7 +257,6 @@ body {
     padding: 5rem 0;
     .contact_copy {
         float: left;
-
         margin: 1.5rem 4rem;
         .title {
             font-size: 4rem;
@@ -251,6 +288,7 @@ body {
             overflow: hidden;
         }
         .input_field {
+          color: $grey_copy;
             position: relative;
             display: block;
             float: right;
@@ -365,7 +403,6 @@ body {
 footer {
     padding: 3rem;
     text-align: center;
-    font-family: Helvetica-light;
     font-size: 1.5rem;
     color: #3f3d4e;
     .green {
@@ -379,63 +416,3 @@ footer {
         letter-spacing: 0.2rem;
     }
 }
-// @media (max-width:1300px){
-//   html{
-//     font-size: 15px;
-//   }
-//   .service{
-//     height: 250px;
-//     p{
-//       height:5rem;
-//       margin-bottom: 1.5rem;
-//     }
-//   }
-// }
-// @media (max-width:1024px) {
-//
-//     p {
-//         font-size: 1.1rem;
-//     }
-//     #services {
-//         .service {
-//             // height: 250px;
-//             p {
-//                 height: 6rem;
-//                 margin-bottom: 2.5rem;
-//             }
-//         }
-//     }
-//     #contact{
-//       .contact_copy{
-//         float: none;
-//         width: 100%;
-//       }
-//       .contact_form{
-//         float: none;
-//         width: 100%;
-//         margin: 4rem auto;
-//       }
-//     }
-// }
-// @media (max-width:768px) {
-//     #banner{
-//       .content{
-//         .title{
-//           font-size: 2.5rem;
-//         }
-//       }
-//     }
-//     p {
-//         font-size: 1rem;
-//     }
-//     #services {
-//         .service {
-//             // height: 20rem;
-//             p {
-//                 height: 7rem;
-//                 margin-bottom: 2.5rem;
-//             }
-//         }
-//     }
-//
-// }
