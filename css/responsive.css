@@ -43,7 +43,7 @@
     display: none; }
 
 #past_work {
-  padding: 3rem 0; }
+  padding: 3rem 0 0; }
   #past_work .title {
     font-size: 2rem; }
   #past_work .small_head {
@@ -60,28 +60,31 @@
       order: -1; }
   #past_work #slider {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin: 0; }
     #past_work #slider li {
       position: static;
       width: 80vw;
-      height: 45vw;
+      height: 40vw;
       box-shadow: 0 0 100px 0 rgba(4, 6, 9, 0.25); }
       #past_work #slider li:nth-child(1) {
         bottom: 0;
         left: 0;
-        transform: none;
+        transform: scale(0.8, 0.8);
         z-index: 0; }
       #past_work #slider li:nth-child(2) {
         bottom: 0;
         left: 0;
         margin: 0;
-        z-index: 2; }
+        z-index: 1;
+        transform: scale(0.9, 0.9);
+        margin-top: -30vw; }
       #past_work #slider li:nth-child(3) {
         bottom: 0;
         right: 0;
-        transform: none;
-        z-index: 1;
-        margin-top: -70vw; }
+        z-index: 2;
+        transform: scale(1);
+        margin-top: -30vw; }
 
 #contact {
   padding: 2rem 0; }
