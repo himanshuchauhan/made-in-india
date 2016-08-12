@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
     <link rel="stylesheet" href="css/normalize.css" media="screen">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/responsive.css" />
 
     <style media="screen">
         .banner {
@@ -17,8 +18,6 @@
         .banner_enhanced {
             background-image: url("images/banner_background.jpg");
         }
-
-
     </style>
 </head>
 
@@ -56,7 +55,7 @@
         <div class="wrapper">
             <div class="service middle">
                 <h3>UI/UX Design</h3>
-                <p>We translate our insights into user flows & wireframes, which set the foundation for relevant and engaging solutions.</p>
+                <p>We translate our insights into user flows &amp; wireframes, which set the foundation for relevant and engaging solutions.</p>
                 <a href="#" class="button button_highlight button_small">Learn more</a> </div>
         </div>
         <div class="wrapper">
@@ -70,7 +69,12 @@
         <div class="wrapper">
             <p class="small_head">THIS IS WHAT WE DO</p>
             <h2 class="title">Our work</h2>
-            <img class="logos" src="images/logo.png" alt="logos" />
+            <div class="logos">
+                <img src="images/logo-bevakoof.png" alt="" class="logo bev">
+                <img src="images/logo-tvfplay.png" alt="" class="logo play">
+                <img src="images/logo-bookmyshow.png" alt="" class="logo">
+            </div>
+
 
             <ul id="slider">
                 <li><img src="images/screen-bewakoof.jpg" alt="bewakoof.com"></li>
@@ -120,15 +124,21 @@
     </footer>
     <script src="js/script.js" charset="utf-8"></script>
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-82332221-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+        ga('create', 'UA-82332221-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
 </body>
 

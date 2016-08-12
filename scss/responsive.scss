@@ -1,0 +1,143 @@
+//-----------------Global Styles------------//
+.wrapper {
+    width: 100%;
+    max-width: 98%;
+}
+//-----------------Banner Styles------------//
+#banner {
+    header {
+        text-align: center;
+    }
+    #logo {
+        float: none;
+        margin-top: 1rem;
+    }
+    nav {
+        display: none;
+    }
+    .content {
+        padding: 2rem 0;
+        .title {
+            font-size: 1.5rem;
+            line-height: 1.4;
+        }
+        .sub_title {
+            font-size: 1.5rem;
+            margin: 3rem 0;
+        }
+        .button_wrapper {
+            max-width: 300px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            .button {
+                padding: 1rem 4rem;
+                margin: 1rem;
+            }
+        }
+    }
+}
+//-----------------Services Styles------------//
+#services {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    padding: 2rem 0;
+    .service {
+        width: 90%;
+        float: none;
+        margin: 1rem auto;
+        padding: 2.5rem 2.5%;
+        &:after {
+            bottom: -130px;
+            height: 130px;
+        }
+    }
+    &:before {
+        display: none;
+    }
+}
+//-------------Portfolio Styles------------//
+#past_work {
+    padding: 3rem 0;
+    .title {
+        font-size: 2rem;
+    }
+    .small_head {
+        font-size: 0.7rem;
+    }
+    .logos {
+        width: 100%;
+        flex-direction: column;
+        margin: 2rem auto 0;
+        .logo {
+            max-width: 300px;
+            width: 50%;
+            margin: 1rem auto;
+        }
+        .play {
+            order: -1;
+        }
+    }
+    #slider {
+        display: flex;
+        flex-direction: column;
+        li {
+            position: static;
+            width: 80vw;
+            height: 45vw;
+            box-shadow: 0 0 100px 0 rgba(4,6,9,0.25);
+            &:nth-child(1) {
+                bottom: 0;
+                left: 0;
+                transform: none;
+                z-index: 0;
+            }
+            &:nth-child(2) {
+                bottom: 0;
+                left: 0;
+                margin: 0;
+                z-index: 2;
+            }
+            &:nth-child(3) {
+                bottom: 0;
+                right: 0;
+                transform: none;
+                z-index: 1;
+                margin-top: -70vw;
+            }
+        }
+    }
+}
+//------------Contact Styles------------//
+#contact {
+    padding: 2rem 0;
+    .contact_copy {
+        float: none;
+        .title {
+            font-size: 2rem;
+            margin: 0 0 2rem;
+        }
+        .small_head {
+            font-size: 0.7rem;
+        }
+    }
+    .contact_form {
+        width: 100%;
+        float: none;
+        .input{
+          margin:auto;
+        }
+        .button{
+          padding: 1rem 6rem;
+          margin: 1rem;
+        }
+    }
+}
+footer{
+  padding: 1rem;
+  font-size: 0.8rem;
+  .in{
+    font-size: 1rem;
+  }
+}

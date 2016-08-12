@@ -7,6 +7,7 @@ body {
   font-family: Noto Sans,futura-medium,sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5rem;
+  min-width: 320px;
 }
 
 .wrapper {
@@ -51,36 +52,6 @@ body {
   clear: both;
 }
 
-.banner_enhanced {
-  -webkit-animation-name: sharpen;
-          animation-name: sharpen;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-@-webkit-keyframes sharpen {
-  from {
-    background-image: -webkit-filter("images/banner_background.jpg"), blur(20px);
-    background-image: filter("images/banner_background.jpg"), blur(20px);
-  }
-  to {
-    background-image: -webkit-filter("images/banner_background.jpg"), blur(0px);
-    background-image: filter("images/banner_background.jpg"), blur(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes sharpen {
-  from {
-    background-image: -webkit-filter("images/banner_background.jpg"), blur(20px);
-    background-image: filter("images/banner_background.jpg"), blur(20px);
-  }
-  to {
-    background-image: -webkit-filter("images/banner_background.jpg"), blur(0px);
-    background-image: filter("images/banner_background.jpg"), blur(0px);
-    opacity: 1;
-  }
-}
 #banner {
   background-color: #f2f1f8;
   background-repeat: no-repeat;
@@ -157,7 +128,7 @@ body {
   font-weight: 400;
   font-size: 1.35rem;
   margin: 5rem;
-  line-height: 1.75;
+  line-height: 1.3;
 }
 #banner .content .button_wrapper {
   text-align: center;
@@ -167,6 +138,36 @@ body {
   margin: 1.5rem;
 }
 
+.banner_enhanced {
+  -webkit-animation-name: sharpen;
+          animation-name: sharpen;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes sharpen {
+  from {
+    background-image: -webkit-filter("images/banner_background.jpg"), blur(20px);
+    background-image: filter("images/banner_background.jpg"), blur(20px);
+  }
+  to {
+    background-image: -webkit-filter("images/banner_background.jpg"), blur(0px);
+    background-image: filter("images/banner_background.jpg"), blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes sharpen {
+  from {
+    background-image: -webkit-filter("images/banner_background.jpg"), blur(20px);
+    background-image: filter("images/banner_background.jpg"), blur(20px);
+  }
+  to {
+    background-image: -webkit-filter("images/banner_background.jpg"), blur(0px);
+    background-image: filter("images/banner_background.jpg"), blur(0px);
+    opacity: 1;
+  }
+}
 #services {
   background: #f2f1f8;
   padding: 2rem 0 6.5rem;
@@ -226,9 +227,18 @@ body {
   overflow: hidden;
 }
 #past_work .logos {
-  width: 960px;
+  width: 90%;
   max-width: 95%;
-  margin-top: 2rem;
+  margin: 2rem auto 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#past_work .logos .logo {
+  width: 20%;
+  height: 100%;
+  margin: 0 7%;
 }
 #past_work .small_head {
   font-size: 0.8rem;
@@ -283,7 +293,7 @@ body {
 }
 #contact .contact_copy {
   float: left;
-  margin: 1.5rem 4rem;
+  margin: 1.5rem 2rem;
 }
 #contact .contact_copy .title {
   font-size: 4rem;

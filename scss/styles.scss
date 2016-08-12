@@ -12,6 +12,7 @@ body {
     font-family: Noto Sans,futura-medium,sans-serif;
     -webkit-font-smoothing: antialiased;
     line-height: 1.5rem;
+    min-width: 320px;
 }
 .wrapper {
     width: 1440px;
@@ -48,19 +49,6 @@ body {
     clear: both;
 }
 //-----------------Banner Styles------------//
-.banner_enhanced {
-    animation-name: sharpen;
-    animation-duration: 2s;
-}
-@keyframes sharpen {
-    from {
-        background-image: filter("images/banner_background.jpg"), blur(20px);
-    }
-    to {
-        background-image: filter("images/banner_background.jpg"), blur(0px);
-        opacity: 1;
-    }
-}
 #banner {
     background-color: $grey_background;
     background-repeat: no-repeat;
@@ -130,7 +118,7 @@ body {
             font-weight: 400;
             font-size: 1.35rem;
             margin: 5rem;
-            line-height: 1.75;
+            line-height: 1.3;
         }
         .button_wrapper {
             text-align: center;
@@ -139,6 +127,20 @@ body {
                 margin: 1.5rem;
             }
         }
+    }
+}
+// Blurred banner Background styles
+.banner_enhanced {
+    animation-name: sharpen;
+    animation-duration: 2s;
+}
+@keyframes sharpen {
+    from {
+        background-image: filter("images/banner_background.jpg"), blur(20px);
+    }
+    to {
+        background-image: filter("images/banner_background.jpg"), blur(0px);
+        opacity: 1;
     }
 }
 //-----------------Services Styles------------//
@@ -202,9 +204,15 @@ body {
     position: relative;
     overflow: hidden;
     .logos {
-        width: 960px;
+        width: 90%;
         max-width: 95%;
-        margin-top: 2rem;
+        margin: 2rem auto 0;
+        display: flex;
+        .logo {
+            width: 20%;
+            height: 100%;
+            margin: 0 7%;
+        }
     }
     .small_head {
         font-size: 0.8rem;
@@ -257,7 +265,7 @@ body {
     padding: 5rem 0;
     .contact_copy {
         float: left;
-        margin: 1.5rem 4rem;
+        margin: 1.5rem 2rem;
         .title {
             font-size: 4rem;
             color: $highlight;
@@ -288,7 +296,7 @@ body {
             overflow: hidden;
         }
         .input_field {
-          color: $grey_copy;
+            color: $grey_copy;
             position: relative;
             display: block;
             float: right;

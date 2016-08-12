@@ -1,0 +1,108 @@
+.wrapper {
+  width: 100%;
+  max-width: 98%; }
+
+#banner header {
+  text-align: center; }
+#banner #logo {
+  float: none;
+  margin-top: 1rem; }
+#banner nav {
+  display: none; }
+#banner .content {
+  padding: 2rem 0; }
+  #banner .content .title {
+    font-size: 1.5rem;
+    line-height: 1.4; }
+  #banner .content .sub_title {
+    font-size: 1.5rem;
+    margin: 3rem 0; }
+  #banner .content .button_wrapper {
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column; }
+    #banner .content .button_wrapper .button {
+      padding: 1rem 4rem;
+      margin: 1rem; }
+
+#services {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  padding: 2rem 0; }
+  #services .service {
+    width: 90%;
+    float: none;
+    margin: 1rem auto;
+    padding: 2.5rem 2.5%; }
+    #services .service:after {
+      bottom: -130px;
+      height: 130px; }
+  #services:before {
+    display: none; }
+
+#past_work {
+  padding: 3rem 0; }
+  #past_work .title {
+    font-size: 2rem; }
+  #past_work .small_head {
+    font-size: 0.7rem; }
+  #past_work .logos {
+    width: 100%;
+    flex-direction: column;
+    margin: 2rem auto 0; }
+    #past_work .logos .logo {
+      max-width: 300px;
+      width: 50%;
+      margin: 1rem auto; }
+    #past_work .logos .play {
+      order: -1; }
+  #past_work #slider {
+    display: flex;
+    flex-direction: column; }
+    #past_work #slider li {
+      position: static;
+      width: 80vw;
+      height: 45vw;
+      box-shadow: 0 0 100px 0 rgba(4, 6, 9, 0.25); }
+      #past_work #slider li:nth-child(1) {
+        bottom: 0;
+        left: 0;
+        transform: none;
+        z-index: 0; }
+      #past_work #slider li:nth-child(2) {
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        z-index: 2; }
+      #past_work #slider li:nth-child(3) {
+        bottom: 0;
+        right: 0;
+        transform: none;
+        z-index: 1;
+        margin-top: -70vw; }
+
+#contact {
+  padding: 2rem 0; }
+  #contact .contact_copy {
+    float: none; }
+    #contact .contact_copy .title {
+      font-size: 2rem;
+      margin: 0 0 2rem; }
+    #contact .contact_copy .small_head {
+      font-size: 0.7rem; }
+  #contact .contact_form {
+    width: 100%;
+    float: none; }
+    #contact .contact_form .input {
+      margin: auto; }
+    #contact .contact_form .button {
+      padding: 1rem 6rem;
+      margin: 1rem; }
+
+footer {
+  padding: 1rem;
+  font-size: 0.8rem; }
+  footer .in {
+    font-size: 1rem; }
