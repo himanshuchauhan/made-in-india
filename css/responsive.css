@@ -16,7 +16,7 @@
     line-height: 1.4; }
   #banner .content .sub_title {
     font-size: 1.5rem;
-    margin: 3rem 0; }
+    margin: 3rem 1rem; }
   #banner .content .button_wrapper {
     max-width: 300px;
     margin: auto;
@@ -61,11 +61,15 @@
   #past_work #slider {
     display: flex;
     flex-direction: column;
-    margin: 0; }
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center; }
     #past_work #slider li {
       position: static;
       width: 80vw;
       height: 40vw;
+      margin: 0 auto;
       box-shadow: 0 0 100px 0 rgba(4, 6, 9, 0.25); }
       #past_work #slider li:nth-child(1) {
         bottom: 0;
@@ -75,7 +79,7 @@
       #past_work #slider li:nth-child(2) {
         bottom: 0;
         left: 0;
-        margin: 0;
+        margin-left: auto;
         z-index: 1;
         transform: scale(0.9, 0.9);
         margin-top: -30vw; }

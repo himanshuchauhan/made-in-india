@@ -23,7 +23,7 @@
         }
         .sub_title {
             font-size: 1.5rem;
-            margin: 3rem 0;
+            margin: 3rem 1rem;
         }
         .button_wrapper {
             max-width: 300px;
@@ -83,11 +83,15 @@
     #slider {
         display: flex;
         flex-direction: column;
-        margin: 0;
+        width: 90vw;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
         li {
             position: static;
             width: 80vw;
             height: 40vw;
+            margin: 0 auto;
             box-shadow: 0 0 100px 0 rgba(4,6,9,0.25);
             &:nth-child(1) {
                 bottom: 0;
@@ -98,7 +102,7 @@
             &:nth-child(2) {
                 bottom: 0;
                 left: 0;
-                margin: 0;
+margin-left: auto;
                 z-index: 1;
                 transform: scale(.9,.9);
                 margin-top: -30vw;
@@ -107,6 +111,7 @@
                 bottom: 0;
                 right: 0;
                 z-index: 2;
+
                 transform: scale(1);
                 margin-top: -30vw;
             }
