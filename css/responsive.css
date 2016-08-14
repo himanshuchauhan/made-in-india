@@ -2,12 +2,76 @@
   width: 100%;
   max-width: 98%; }
 
+body {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none; }
+
+nav.mobile {
+  background-color: #f2f1f8;
+  position: fixed;
+  z-index: 3000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  float: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 1s ease;
+  transform: translateY(-200%);
+  align-items: center; }
+  nav.mobile a {
+    text-decoration: none;
+    margin: 15% 0 0;
+    font-size: 1.3rem;
+    line-height: 1em;
+    display: block;
+    text-align: center;
+    letter-spacing: 0.21em;
+    opacity: 1;
+    color: #7a7a7a; }
+  nav.mobile .button {
+    margin: 15% auto 0;
+    color: #ffffff; }
+  nav.mobile .close {
+    color: #3f3d4e;
+    font-size: 2rem;
+    position: fixed;
+    right: 0;
+    margin: 5%; }
+  nav.mobile #social {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 12%;
+    justify-content: space-around; }
+    nav.mobile #social i {
+      font-size: 2rem;
+      color: #3f3d4e; }
+
+nav.mobile.on {
+  transform: translateY(0); }
+
 #banner header {
-  text-align: center; }
+  display: flex;
+  justify-content: space-between; }
 #banner #logo {
   float: none;
-  margin-top: 1rem; }
-#banner nav {
+  margin: 1rem;
+  font-size: 1.6rem; }
+#banner .ham {
+  color: #58e48c;
+  font-size: 2rem;
+  margin: auto 5%; }
+#banner nav.desktop {
   display: none; }
 #banner .content {
   padding: 2rem 0; }
@@ -33,6 +97,7 @@
   padding: 2rem 0; }
   #services .service {
     width: 90%;
+    max-width: 450px;
     float: none;
     margin: 1rem auto;
     padding: 2.5rem 2.5%; }

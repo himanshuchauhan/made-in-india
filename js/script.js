@@ -1,4 +1,7 @@
 // js for lazy-loading banner-background image
+
+
+
 window.onload = function loadStuff() {
     var win, doc, img, header, enhancedClass;
 
@@ -172,4 +175,83 @@ window.onload = function loadStuff() {
             classie.remove(ev.target.parentNode, 'input--filled');
         }
     }
+})();
+/**
+ * modalEffects.js v1.0.0
+ * http://www.codrops.com
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * Copyright 2013, Codrops
+ * http://www.codrops.com
+ */
+(function() {
+
+    function init() {
+
+
+        var ham = document.querySelector('.ham');
+        var nav = document.querySelector('nav.mobile');
+        var close = document.querySelector('.close');
+        // var link = document.querySelectorAll('a.link')
+
+
+
+        ham.addEventListener('click', function(ev) {
+            classie.add(nav, 'on');
+
+        });
+        close.addEventListener('click', function(ev) {
+            classie.remove(nav, 'on')
+        });
+
+        [].slice.call(document.querySelectorAll('a')).forEach(function(el) {
+          el.addEventListener('click',function(ev) {
+            classie.remove(nav,'on')
+          });
+        });
+
+        var overlay = document.querySelector('.md_overlay');
+
+
+        [].slice.call(document.querySelectorAll('.md_trigger')).forEach(function(el, i) {
+
+            var modal = document.querySelector('#' + el.getAttribute('data-modal')),
+                close = modal.querySelector('.md_close');
+
+            function removeModal() {
+                classie.remove(modal, 'md_show');
+
+
+            }
+
+            function removeModalHandler() {
+                removeModal(classie.has(el, 'md-setperspective'));
+            }
+
+            el.addEventListener('click', function(ev) {
+                classie.add(modal, 'md_show');
+                overlay.removeEventListener('click', removeModalHandler);
+                overlay.addEventListener('click', removeModalHandler);
+                ev.preventDefault();
+                if (classie.has(el, 'md-setperspective')) {
+                    setTimeout(function() {
+                        classie.add(document.documentElement, 'md-perspective');
+                    }, 25);
+                }
+            });
+
+            close.addEventListener('click', function(ev) {
+                ev.stopPropagation();
+
+                removeModalHandler();
+            });
+
+        });
+
+    }
+
+    init();
+
 })();
