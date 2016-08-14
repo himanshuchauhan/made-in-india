@@ -70,6 +70,7 @@ nav.mobile.on {
   #banner #logo span {
     font-size: 2rem; }
 #banner .ham {
+  display: block;
   color: #58e48c;
   font-size: 2rem;
   margin: auto 5%; }
