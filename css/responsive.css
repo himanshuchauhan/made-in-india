@@ -65,9 +65,12 @@ nav.mobile.on {
   justify-content: space-between; }
 #banner #logo {
   float: none;
-  margin: 1rem;
+  margin: .5rem;
   font-size: 1.6rem; }
+  #banner #logo span {
+    font-size: 2rem; }
 #banner .ham {
+  display: block;
   color: #58e48c;
   font-size: 2rem;
   margin: auto 5%; }

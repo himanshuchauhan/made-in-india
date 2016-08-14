@@ -81,10 +81,14 @@ nav.mobile.on {
     }
     #logo {
         float: none;
-        margin: 1rem;
+        margin: .5rem;
         font-size: 1.6rem;
+        span{
+          font-size: 2rem
+        }
     }
     .ham {
+      display: block;
         color: $highlight;
         font-size: 2rem;
         margin: auto 5%;
